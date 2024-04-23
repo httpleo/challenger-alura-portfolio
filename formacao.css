@@ -1,0 +1,128 @@
+#formacao {
+    background-color: var(--azul10);
+    padding: 5.125rem;
+}
+
+.container_formacao {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.375rem;
+    width: 100%;
+}
+
+.container_formacao--titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.conteudo_formacao {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    width: auto;
+}
+
+.conteudo_formacao--imagem {
+    align-items: center;
+    background: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
+    height: 290px;
+    width: 370px;
+}
+
+.conteudo_formacao--curso {
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.conteudo_formacao--conclusao {
+    font-size: 1.150rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    #formacao {
+        padding: 2rem;
+    }
+    
+    .container_formacao {
+        gap: 2rem;
+        margin: 0 auto;
+        width: 704px;
+    }
+    
+    .container_formacao--titulo {
+        font-size: 1.375rem;
+    }
+    
+    .conteudo_formacao {
+        gap: 1rem;
+    }
+
+    .conteudo_formacao--descricao {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    .conteudo_formacao--imagem {
+        gap: .625rem;
+        height: 125px;
+        width: 255px;
+    }
+
+    .conteudo_formacao--imagem img {
+        height: 58px; 
+        width: 84px;
+    }
+    
+    .conteudo_formacao--curso {
+        font-size: 1rem;
+        line-height: 1.1875rem;
+    }
+    
+    .conteudo_formacao--conclusao {
+        font-size: 0.875rem;
+    }
+}
+
+/* Celular */
+@media screen and (max-width: 425px) {
+    #formacao {
+        width: auto;
+    }
+    
+    .container_formacao {
+        margin: 0;
+        width: auto;
+    }
+    
+    .conteudo_formacao {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .conteudo_formacao--descricao {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    .conteudo_formacao--imagem {
+        height: 130px;
+        width: 90vw;
+    }
+
+    .conteudo_formacao--imagem img {
+        height: 58px; 
+        width: 84px;
+    }
+}

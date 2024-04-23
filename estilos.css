@@ -1,0 +1,17 @@
+body{
+box-sizing: border-box;
+background-color: #e9e7e0;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin: 0;
+padding: 0;
+line-height: 1;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #06007D;
+}
